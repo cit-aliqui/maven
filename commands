@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/ec2-user/student-appcode
+mvn clean compile sonar:sonar -Dsonar.host.url=http://10.142.0.11:9000 -Dsonar.login=279cc2da1e0119040d2e37b2f36a235b04a5c97a package exec:exec -Dexec.executable=/home/ec2-user/deploy-local.sh
